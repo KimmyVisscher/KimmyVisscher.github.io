@@ -1,0 +1,371 @@
+@font-face {
+    font-family: indieFlower;
+    src: url("../fonts/IndieFlower-Regular.ttf");
+}
+
+*{
+    padding: 0;
+    font-family: indieFlower;
+    margin: 0.7vh 2vh 0vh 2vh;
+}
+
+body{
+    font-size: 1.3vw;
+    background-color: #FAFF00;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#mainContainer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+header{
+    grid-column: 1/7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+header > nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+}
+
+header > img{
+    height: 12vh;
+    width: 10vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.heroImg > img{
+    height: 65vh;
+    width: 25vw;
+}
+
+.heroBanner{
+    grid-column: 1/7;
+    height: 85vh; /*92*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroText > h1{
+    font-size: 11vh;
+}
+
+.heroText > h2{
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;    
+    overflow: hidden;
+    animation: 
+        typing 2s steps(34),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor{
+    50% { border-color: transparent }
+}
+
+@keyframes typing{
+    from { width: 0 }
+}
+
+.heroText{
+    font-size: 3.5vh;
+}
+
+.arrow{
+    grid-column: 1/7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#about{
+    grid-column: 1/7;
+    height: 92vh;
+}
+
+#about > h1{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutSection{
+    display: flex;
+}
+
+.aboutImage > img{
+    height: 65vh;
+    width: 20vw;
+}
+
+.skillsSection{
+    grid-column: 1/7;
+    height: 92vh;
+}
+
+#skills > h1{
+    display: flex;
+    justify-content: center;
+    font-size: 6vh; 
+}
+
+.row{
+    display: flex;
+}
+
+.cardContainer{
+    max-width: 90%;
+    margin: 0 auto;
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* cards */ 
+.cards{
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 2vw 0;
+}
+
+.card{
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    max-width: 7.813vw;
+    min-height: 65vh;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url("../images/html.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: max-width 0.5s ease-in-out;
+    -webkit-transition: max-width 0.5s ease-in-out;
+    -moz-transition: max-width 0.5s ease-in-out;
+    -ms-transition: max-width 0.5s ease-in-out;
+    -o-transition: max-width 0.5 ease-in-out;
+}
+
+.card:nth-of-type(2){
+    background-image: url("../images/Php.png")
+}
+
+.card:nth-of-type(3){
+    background-image: url("../images/java.jpg")
+}
+
+.card:nth-of-type(4){
+    background-image: url("../images/java.png")
+}
+
+.card:nth-of-type(5){
+    background-image: url("../images/unreal.png")
+}
+
+.card:nth-of-type(6){
+    background-image: url("../images/blender.jpg")
+}
+
+.card:hover{
+    max-width: 15vw;
+}
+
+.cardBody{
+    background: linear-gradient(180deg, rgba(251, 255, 0, 0.658) 0%, #FAFF00 100%);
+    padding: 2vw;
+}
+
+.title{
+    background: linear-gradient(180deg, rgba(250, 255, 0, 0) 25%, #FAFF00 100%);
+    position: absolute;
+    inset: 0;
+}
+
+.card:hover .title{
+    all: unset;
+}
+
+.title > h2{
+    font-size: clamp(38px, 5vw, 48px);
+    color: black;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 0;
+    transform: rotate(-90deg) translateX(-18.229vw);
+    -webkit-transform: rotate(-90deg) translateX(-18.229vw);
+    -moz-transform: rotate(-90deg) translateX(-18.299vw);
+    -ms-transform: rotate(-90deg) translateX(-18.229vw);
+    -o-transform: rotate(-90deg) translateX(-18.229vw);
+}
+
+.card:hover .title > h2{
+    padding-bottom: 0.5em;
+    transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
+}
+
+.cardBody > p{
+    position: absolute;
+    font-size: 0.938vw;
+    color: black;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out;
+    -webkit-transition: max-height 0.3s ease-in-out;
+    -moz-transition: max-height 0.3s ease-in-out;
+    -ms-transition: max-height 0.3s ease-in-out;
+    -o-transition: max-height 0.3s ease-in-out;
+}
+
+.card:hover .cardBody > p{
+    position: relative;
+    opacity: 1;
+    max-height: 100%;
+    transition-delay: 0.3s;
+}
+
+/* end cards */
+
+.projectSection{
+    grid-column: 1/7;
+    height: 92vh;
+}
+
+#projects > h1{
+    display: flex;
+    justify-content: center;
+}
+
+.boxContainer{
+    display: flex;
+    
+}
+
+.box > img{
+    height: 35vh;
+    width: 25vw;
+    border-radius: 3px;
+}
+
+.box{
+    box-shadow: 5px 3px 20px black;
+    overflow: hidden;
+}
+
+.intro{
+    height: 40vh;
+    width: 25vw;
+    padding: 6px;
+    box-sizing: border-box;
+    background: rgba(251, 255, 0, 0.658);
+    transition: .5s;
+}
+
+
+footer{
+    grid-column: 1/7;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* professional skills page */
+
+.headerProfIndex{
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+.headerProf{
+    grid-column: 1/7;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.heroProf{
+    grid-column: 1/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.heroProf > img{
+    height: 65vh;
+    width: 25vw;
+}
+
+#profPort{
+    height: 96vh;
+}
+
+#profPort > h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8vh;
+}
+
+.profContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+    align-items: center;
+}
+
+.profBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 10vw;
+    background-color: #FAFF00;
+    border-radius: 40px;
+    font-size: 2vh; 
+    border: 4px solid black;
+}
+
+.profBoxes:hover{
+    background-color: white;
+}
+
+.pdf > object{
+    height: 87vh;
+    width: 92vw;
+}
+
+video{
+    height: 87vh;
+    width: 92vw;
+}
