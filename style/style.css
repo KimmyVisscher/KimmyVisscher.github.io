@@ -369,3 +369,60 @@ iframe{
     height: 87vh;
     width: 92vw;
 }
+
+.textTar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18vh;
+}
+
+.textTar > h1{
+    font-size: 3em;
+}
+
+.countdown{
+    display: flex;
+}
+
+.countdown div{
+    position: relative;
+    width: 20vw;
+    height: 25vh;
+    line-height: 25vh;
+    text-align: center;
+    background: #333;
+    color: #FAFF00;
+    margin: 0 5vw;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.countdown div:before{
+    content: '';
+    position: absolute;
+    bottom: -15vh;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    background: #FAFF00;
+    color: #333;
+    font-style: 0.35em;
+    line-height: 10vh;
+    font-weight: 300;
+}
+
+.countdown #day:before{
+    content: 'Dagen';
+}
+
+.countdown #hour:before{
+    content: 'Uren';
+}
+
+.countdown #minute:before{
+    content: 'Minuten';
+}
+
+.countdown #seconds:before{
+    content: 'Seconden';
+}
