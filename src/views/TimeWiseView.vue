@@ -95,7 +95,7 @@ const features = [
         <div class="container">
           <div class="case-main-image timewise-main-image">
             <img
-              src="/projects/timewise-main.png"
+              src="/projects/timewise.png"
               alt="TimeWise educatieve applicatie"
             />
           </div>
@@ -239,14 +239,14 @@ const features = [
             <div class="timewise-gallery-two">
             <div class="timewise-gallery-image">
                 <img
-                src="/projects/timewise-1.png"
+                src="/projects/timewise-main.png"
                 alt="TimeWise applicatie"
                 />
             </div>
 
             <div class="timewise-gallery-image">
                 <img
-                src="/projects/timewise-2.png"
+                src="/projects/timewise-1.png"
                 alt="TimeWise project"
                 />
             </div>

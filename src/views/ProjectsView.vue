@@ -32,7 +32,7 @@ const projects = [
     description:
       'Project gericht op digitale toegankelijkheid en het toegankelijk maken van een sollicitatieformulier.',
     tags: ['WCAG', 'Accessibility', 'UX'],
-    image: '/projects/duo.jpg',
+    image: '/projects/duo-form.png',
     link: '/projecten/duo',
     category: 'Accessibility',
   },
@@ -41,7 +41,7 @@ const projects = [
     description:
       'Educatieve applicatie waarbij augmented reality wordt ingezet binnen het onderwijs.',
     tags: ['AR', 'Web', 'Education'],
-    image: '/projects/timewise.jpg',
+    image: '/projects/timewise.png',
     link: '/projecten/timewise',
     category: 'Studieproject',
   },
@@ -50,7 +50,7 @@ const projects = [
     description:
       'Mijn eerste volledig afgeronde gameproject en het project waardoor mijn interesse in game development ontstond.',
     tags: ['Game Development', 'Unity'],
-    image: '/projects/oceanview.jpg',
+    image: '/projects/oceanview-1.png',
     link: '/projecten/oceanview',
     category: 'Game Development',
   },
