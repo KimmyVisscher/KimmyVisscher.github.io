@@ -87,7 +87,7 @@ const technologies = [
         <div class="container">
           <div class="case-main-image">
             <img
-              src="/projects/emmen-interface.jpg"
+              src="/projects/emmen-interface.png"
               alt="Raadpleegschil Gemeente Emmen"
             />
           </div>
@@ -265,14 +265,14 @@ const technologies = [
           <div class="case-gallery">
             <div class="case-gallery-large">
               <img
-                src="/projects/emmen-overzicht.jpg"
+                src="/projects/emmen-overzicht.png"
                 alt="Overzicht van de raadpleegschil"
               />
             </div>
 
             <div>
               <img
-                src="/projects/emmen-detail.jpg"
+                src="/projects/emmen-detail.png"
                 alt="Detailweergave raadpleegschil"
               />
             </div>
