@@ -1,8 +1,13 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import HomeView from './views/HomeView.vue'
 import ProjectsView from './views/ProjectsView.vue'
 import GemeenteEmmenView from './views/GemeenteEmmenView.vue'
+import OwnerView from './views/OwnerView.vue'
+import WhatRemainsOfUsView from './views/WhatRemainsOfUsView.vue'
+import DuoView from './views/DuoView.vue'
+import TimeWiseView from './views/TimeWiseView.vue'
+import OceanviewView from './views/OceanviewView.vue'
 
 const routes = [
   {
@@ -20,11 +25,37 @@ const routes = [
     name: 'gemeente-emmen',
     component: GemeenteEmmenView,
   },
+  {
+    path: '/projecten/owner-dashboard',
+    name: 'owner-dashboard',
+    component: OwnerView,
+  },
+  {
+    path: '/projecten/what-remains-of-us',
+    name: 'what-remains-of-us',
+    component: WhatRemainsOfUsView,
+  },
+  {
+    path: '/projecten/duo',
+    name: 'duo',
+    component: DuoView,
+  },
+  {
+    path: '/projecten/timewise',
+    name: 'timewise',
+    component: TimeWiseView,
+  },
+  {
+    path: '/projecten/oceanview-island',
+    name: 'oceanview-island',
+    component: OceanviewView,
+  },
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
+
   scrollBehavior() {
     return { top: 0 }
   },

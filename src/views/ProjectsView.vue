@@ -15,7 +15,7 @@ const projects = [
       'Dynamisch realtime dashboard met KPI’s, kaartvisualisaties en bedrijfsdata.',
     tags: ['PHP', 'Laravel', 'Vue', 'Leaflet'],
     image: '/projects/owner.svg',
-    link: '#',
+    link: '/projecten/owner-dashboard',
     category: 'Software Development',
   },
   {
@@ -24,7 +24,7 @@ const projects = [
       'Cinematische WOII-game in Unreal Engine met verhaalgedreven gameplay en betekenisvolle keuzes.',
     tags: ['Unreal Engine', 'Blueprints', 'Game Design'],
     image: '/projects/game.png',
-    link: '#',
+    link: '/projecten/what-remains-of-us',
     category: 'Game Development',
   },
   {
@@ -33,7 +33,7 @@ const projects = [
       'Project gericht op digitale toegankelijkheid en het toegankelijk maken van een sollicitatieformulier.',
     tags: ['WCAG', 'Accessibility', 'UX'],
     image: '/projects/duo.jpg',
-    link: '#',
+    link: '/projecten/duo',
     category: 'Accessibility',
   },
   {
@@ -42,7 +42,7 @@ const projects = [
       'Educatieve applicatie waarbij augmented reality wordt ingezet binnen het onderwijs.',
     tags: ['AR', 'Web', 'Education'],
     image: '/projects/timewise.jpg',
-    link: '#',
+    link: '/projecten/timewise',
     category: 'Studieproject',
   },
   {
@@ -51,7 +51,7 @@ const projects = [
       'Mijn eerste volledig afgeronde gameproject en het project waardoor mijn interesse in game development ontstond.',
     tags: ['Game Development', 'Unity'],
     image: '/projects/oceanview.jpg',
-    link: '#',
+    link: '/projecten/oceanview',
     category: 'Game Development',
   },
 ]
